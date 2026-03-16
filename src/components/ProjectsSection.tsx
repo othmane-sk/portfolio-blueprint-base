@@ -2,13 +2,23 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
-  { title: "E-Commerce Platform", category: "Web App", description: "A full-featured online store with cart, checkout, and payment integration." },
-  { title: "Task Management App", category: "SaaS", description: "Collaborative project management tool with real-time updates." },
-  { title: "Portfolio Website", category: "Design", description: "A stunning portfolio site for a creative agency." },
-  { title: "Social Media Dashboard", category: "Web App", description: "Analytics dashboard for tracking social media engagement." },
-  { title: "Fitness Tracker", category: "Mobile App", description: "Cross-platform fitness tracking app with workout plans." },
-  { title: "Restaurant Booking", category: "Web App", description: "Online reservation system with real-time availability." },
+  { 
+    title: "OFPPT Discipline System", 
+    category: "Web Application", 
+    description: "A web application developed to manage student absences and disciplinary records, featuring CRUD operations and efficient data management." 
+  },
+  { 
+    title: "3D Image Slider", 
+    category: "Frontend Animation", 
+    description: "An interactive 3D image slider created with HTML and CSS animations to showcase images in a dynamic and visually engaging way." 
+  },
+  { 
+    title: "Mobile E-commerce Figma Design", 
+    category: "UI/UX Design", 
+    description: "A mobile-first e-commerce interface designed in Figma, focusing on intuitive navigation and a smooth shopping experience." 
+  },
 ];
+
 
 const ProjectsSection = () => {
   return (

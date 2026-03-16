@@ -34,9 +34,9 @@ const ContactSection = () => {
             <h3 className="font-heading text-2xl font-semibold mb-6">Contact Info</h3>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "Email", value: "hello@example.com" },
-                { icon: Phone, label: "Phone", value: "+1 234 567 890" },
-                { icon: MapPin, label: "Location", value: "New York, USA" },
+                { icon: Mail, label: "Email", value: "othmanedjebara23@gmail.com" },
+                { icon: Phone, label: "Phone", value: "+212 691 014 201" },
+                { icon: MapPin, label: "Location", value: "Casablanca, Morocco" },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">

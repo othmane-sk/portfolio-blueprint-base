@@ -1,4 +1,9 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
+
+const socialLinks = [
+  { icon: Github, href: "https://urls.fr/2aCXYp", label: "GitHub" },
+  { icon: Linkedin, href: "https://urls.fr/fKBz-7", label: "LinkedIn" },
+];
 
 const Footer = () => {
   return (
@@ -8,10 +13,13 @@ const Footer = () => {
           © 2026 Portfolio. All rights reserved.
         </p>
         <div className="flex gap-4">
-          {[Github, Linkedin, Twitter].map((Icon, i) => (
+          {socialLinks.map(({ icon: Icon, href, label }) => (
             <a
-              key={i}
-              href="#"
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
               className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
             >
               <Icon size={16} />

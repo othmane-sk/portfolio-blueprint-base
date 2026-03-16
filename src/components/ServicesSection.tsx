@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import { Globe, Smartphone, Server, Figma } from "lucide-react";
+import { Globe, Server, Figma } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
     title: "Web Development",
     description: "Building responsive, performant websites with modern frameworks and best practices.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Apps",
-    description: "Cross-platform mobile applications that deliver native-like experiences.",
   },
   {
     icon: Server,
@@ -40,7 +35,7 @@ const ServicesSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {services.map((service, i) => (
             <motion.div
               key={service.title}

@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Code, Palette, Zap } from "lucide-react";
 
-const stats = [
-  { value: "5+", label: "Years Experience" },
-  { value: "50+", label: "Projects Completed" },
-  { value: "30+", label: "Happy Clients" },
+const features = [
+  { icon: Code, label: "Clean Code" },
+  { icon: Palette, label: "UI/UX Design" },
+  { icon: Zap, label: "Performance" },
 ];
 
 const AboutSection = () => {
@@ -37,27 +37,16 @@ const AboutSection = () => {
               I'm a full-stack developer with a keen eye for design. I specialize in building modern web applications that are both beautiful and functional. My approach combines clean code with thoughtful UX design.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.
+              When I'm not coding, you can find me exploring new technologies, contributing to open source projects.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 mb-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center p-4 rounded-xl bg-card border border-border">
-                  <div className="text-2xl font-bold text-primary font-heading">{stat.value}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex gap-4">
-              {[
-                { icon: Code, label: "Clean Code" },
-                { icon: Palette, label: "UI/UX Design" },
-                { icon: Zap, label: "Performance" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Icon size={16} className="text-primary" />
-                  {label}
+            <div className="grid grid-cols-3 gap-6">
+              {features.map(({ icon: Icon, label }) => (
+                <div key={label} className="text-center p-4 rounded-xl bg-card border border-border">
+                  <div className="flex justify-center mb-2">
+                    <Icon size={24} className="text-primary" />
+                  </div>
+                  <div className="text-xs text-muted-foreground mt-1">{label}</div>
                 </div>
               ))}
             </div>
